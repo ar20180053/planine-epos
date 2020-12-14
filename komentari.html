@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zimovanje na dohvat ruke</title>
+
+    <link rel="stylesheet" href="styles/styleKom.css">
+
+
+</head>
+
+
+
+<body>
+
+    <div id="glavni">
+        <div id="particles-js"></div>
+        <img id="naziv" src="slike/skijanje.jpg">
+
+        <ul id="meni">
+
+            <li><a class="linkM" href="pocetna.html"> O nama </a></li>
+
+            <li><a class="linkM" href="planine2.html">Planine</a></li>
+
+            <li><a class="linkM" href="komentari.html" id="aktivna">Komentari</a></li>
+
+        </ul>
+
+        <h1 id="komentari">Komentari</h1>
+
+        <form name="forma" method="post" onsubmit="return validacija(this)">
+            <label>Ime:</label>
+            <input type="text" id="ime" name="ime">
+            <br> <br>
+            <label>Prezime:</label>
+            <input type="text" id="prezime" name="prezime"> <br>
+            <br>
+            <label id="pol">Pol</label> <br>
+
+            <input id="polZ" class="dugmici" type="radio" name="pol"><label class="polL"> Ženski</label>
+            <input id="polM" class="dugmici" type="radio" name="pol"><label class="polL">Muški</label>
+            <br> <br>
+            <label>E-mail:</label>
+            <input type="email" name="mejl"> <br>
+            <br>
+            <label>Šta nam šaljete:</label> <br>
+
+            <input class="dugmici" type="radio" name="tip" id=""> <label> Komentar</label> <br>
+
+            <input class="dugmici" type="radio" name="tip" id=""> <label>Žalba</label> <br>
+
+            <input class="dugmici" type="radio" name="tip" id=""> <label>Sugestija</label> <br>
+            <br>
+            <textarea name="polje" id="" cols="30" rows="30"></textarea> <br>
+
+            <input class="dugmici" type="checkbox" name="punoletan"> <label>18+</label> <br>
+            <div class="val">
+                <input id="posalji" class="dugme" type="submit" value="Pošalji">
+
+                <input id="obrisi" class="dugme" type="reset" value="Obriši">
+            </div>
+
+
+        </form>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/funkcije.js"></script>
+</body>
+
+
+
+</html>

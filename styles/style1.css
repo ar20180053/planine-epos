@@ -1,0 +1,180 @@
+* {
+    background-color: transparent;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: snow;
+}
+
+#glavni {
+    margin: 5px 5px;
+    padding: 10px;
+}
+
+#naziv {
+    position: grid;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+
+#meni {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 105px 105px 105px;
+    align-content: center;
+    height: 50px;
+    background-color: #7fffd4;
+}
+
+.linkM {
+    display: block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    height: 35px;
+    text-align: center;
+    border: solid black;
+}
+
+.linkM:hover {
+    background-color: darkgray;
+}
+
+#aktivna {
+    background-color: aquamarine;
+}
+
+li {
+    font-size: large;
+    width: 130px;
+    list-style-type: none;
+    line-height: 1.8;
+}
+
+#sadrzaj {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 10px;
+}
+
+.nasloviLevo {
+    margin: 10px;
+    grid-column: 1/3;
+    font-size: xx-large;
+    justify-self: flex-start;
+    border: solid darkgray;
+    border-radius: 10px;
+    background-color: rgb(216, 225, 233);
+}
+
+.nasloviDesno {
+    margin: 10px;
+    grid-column: 1/3;
+    font-size: xx-large;
+    justify-self: flex-end;
+    border: solid darkgray;
+    border-radius: 10px;
+    background-color: rgb(216, 225, 233);
+}
+
+.slikeLevo {
+    width: 500px;
+    justify-self: flex-start;
+    align-self: center;
+    margin: 10px;
+}
+
+.slikeDesno {
+    width: 500px;
+    justify-self: flex-end;
+    align-self: center;
+    margin: 10px;
+}
+
+.tekst {
+    text-align: justify;
+    margin: 10px;
+}
+
+#stranice {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.stranice {
+    color: black;
+    font-size: large;
+    text-decoration: none;
+}
+
+.stranice:hover {
+    text-decoration: underline;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+}
+
+#trenutna {
+    text-decoration: underline;
+    background-color: #bbbbbb;
+}
+
+.dugmeLevo {
+    display: grid;
+    width: 150px;
+    font-size: x-large;
+    background-color: aqua;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.dugmeDesno {
+    display: grid;
+    width: 150px;
+    font-size: x-large;
+    background-color: aqua;
+    border-radius: 10px;
+    grid-column: span 1/3;
+    margin: 10px;
+    margin-bottom: 15px;
+    justify-self: end;
+}
+
+button:hover {
+    width: 30%;
+    background-color: black;
+    font-size: xx-large;
+}
+
+.linkDugme {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
+
+.linkDugme:hover {
+    color: white;
+}
+
+canvas {
+    display: block;
+}
+
+#particles-js {
+
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 240px;
+    background-color: transparent;
+}
